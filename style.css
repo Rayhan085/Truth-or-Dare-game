@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to right, #1E90FF, #00BFFF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Supaya elemen tersusun secara vertikal */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #f1f1f1;
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+input, select, .input-section button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    width: 60%;
+}
+
+select {
+    width: 20%;
+}
+
+/* Footer di bawah tengah */
+.footer {
+    position: fixed; /* Supaya selalu di bawah */
+    bottom: 10px; /* Jarak dari bawah */
+    left: 50%; /* Tengahin horizontal */
+    transform: translateX(-50%); /* Biar pas di tengah */
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+}
